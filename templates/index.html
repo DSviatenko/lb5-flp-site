@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise hotel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип">
+            </a>
+        </div>
+        <nav>
+            <a href="apartments">АПАРТАМЕНТИ</a>
+            <a href="restaurant">РЕСТОРАН</a>
+            <a href="children">ДЛЯ ДІТЕЙ</a>
+            <a href="about">ПРО САЙТ</a>
+        </nav>
+        <div id="phone"><strong>073-111-22-33</strong></div>
+    </header>    
+
+    <main>
+        <img id="main-page" src="{{ url_for('static', filename='index-image/main-page.jpg') }}" alt="Будинок">
+
+        <div class="split-container">
+            <div class="photo-half">
+                <img src="{{ url_for('static', filename='index-image/main-page-second.jpg') }}" alt="Будинки">
+            </div>
+            <div class="text-half">
+                <p>
+                    <strong>Paradise</strong> – готельно-ресторанний комлекс, місце, де гастрономічні задоволення посилюються завдяки естетиці навколишньої природи та свіжому повітрю.
+                    <br>
+                    <br>
+                    Повне перезавантаження через відчуття:
+                </p>
+                <ul>
+                    <li>Споглядати соковитий ландшафт і естетику комплексу</li>
+                    <li>Занурюватись у звуки крон та плескіт озера</li>
+                    <li>Вдихати живильну прохолоду лісу</li>
+                    <li>Смакувати шедеври авторської кухні та власної броварні</li>
+                    <li>Бавити тіло у SPA, довіритись істинному комфорту</li>
+                    <li>Заряджатись сонячим промінням та джерельною прохолодою басейну</li>
+                    <li>Розрадити та наповнювати душу враженнями</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img src="{{ url_for('static', filename='footer-logo.png') }}" alt="Логотип">
+        </div>
+        <div id="contact">
+            <p>м. Полтава, вул. Незалежності, буд 1</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип">
+            </a>
+        </div>
+        <nav>
+            <a href="apartments">АПАРТАМЕНТИ</a>
+            <a href="restaurant">РЕСТОРАН</a>
+            <a href="children">ДЛЯ ДІТЕЙ</a>
+            <a href="about">ПРО САЙТ</a>
+        </nav>
+        <div id="phone"><strong>073-111-22-33</strong></div>
+    </header>
+
+    <main>
+        <div class="split-container">
+            <div class="photo-half">
+                <img src="{{ url_for('static', filename='recreation-image/recreation-image.png') }}" alt="Місток між деревами">
+            </div>
+            <div class="text-half">
+                <p>
+                    <b>Сайт створив:</b><br>
+                    студент 1 курсу 5м групи<br>
+                    Святенко Дмитро Володимирович<br>
+                    <br>
+                    <b>Сайт створено в рамках</b><br>
+                    Лабораторної роботи №5<br>
+                    з дисципліни<br>
+                    "Функціональне та логічне програмування"
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img src="{{ url_for('static', filename='footer-logo.png') }}" alt="Логотип">
+        </div>
+        <div id="contact">
+            <p>м. Полтава, вул. Незалежності, буд 1</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

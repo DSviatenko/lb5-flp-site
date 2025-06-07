@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип">
+            </a>
+        </div>
+        <nav>
+            <a href="apartments">АПАРТАМЕНТИ</a>
+            <a href="restaurant">РЕСТОРАН</a>
+            <a href="children">ДЛЯ ДІТЕЙ</a>
+            <a href="about">ПРО САЙТ</a>
+        </nav>
+        <div id="phone"><strong>073-111-22-33</strong></div>
+    </header>
+
+    <main>
+        <img id="main-page" src="{{ url_for('static', filename='restaurant-image/restaurant-page.jpg') }}" alt="Ресторан">
+        
+        <div class="split-container">
+            <div class="photo-half">
+                <img src="{{ url_for('static', filename='restaurant-image/second-image.png') }}" alt="Стейк">
+            </div>
+            <div class="text-half">
+                <p>
+                    Концепція ресторану побудована на авторській кухні нашого шефа з натуральних якiсних і в більшості локальних продуктів. Акцент зробили на м’ясні страви.
+                    <br>
+                    <br>
+                    Соковиті стейки з мармурової яловичини у поєднанні з крафтовим пивом стали “візитівкою” ресторану. Для приготування стейків використовують мармурове м’ясо з власної органічної ферми.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img src="{{ url_for('static', filename='footer-logo.png') }}" alt="Логотип">
+        </div>
+        <div id="contact">
+            <p>м. Полтава, вул. Незалежності, буд 1</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
